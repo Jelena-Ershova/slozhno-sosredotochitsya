@@ -14,7 +14,7 @@
 }
 
 .header {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .header__sub_element {
@@ -86,12 +86,12 @@
 }
 
 .header__title {
-  padding-block-end: 3.43rem;
+  padding-block-end: 3.48rem;
 }
 
 .header__title__description {
   width: 355px;
-  margin-block-end: 1.7em;
+  margin-block-end: 1.65em;
 }
 
 .title-decor {
@@ -111,9 +111,9 @@
   border-left: 1px solid var(--accent-color);
 }
 
-.main {
+/*.main {
   margin-block: 2.74em;
-}
+}*/
 
 .main__title {
   margin: 0;
@@ -180,7 +180,7 @@
 
 .footer {
   display: grid;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .footer__sub_element {
