@@ -2,3 +2,35 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+@media (prefers-color-scheme: dark) {
+  .page {
+    /* Переменные тёмной темы */
+    --accent-color: #ff0070;
+    --title-color: #df00ff;
+    --bg-accent-invert-color: #000028;
+    --bg-text-color: #ff0070;
+    --text-color: #f1b2ce;
+    --border-hover: #ff007040;
+
+    --bg-page-picture: url(../images/cover-image-dark.png);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .page {
+    --accent-color: #353430;
+    --title-color: #ffc2e6;
+    --bg-accent-invert-color: #353430;
+    --text-color: #353430;
+    --bg-text-color: #ff8dcb;
+    --border-hover: #32312d40;
+
+    --bg-page-picture: url(../images/cover-image-light.png);
+  }
+}
+
+@media (prefers-color-scheme: light) and (width >=1024px) {
+  .header__footer__title {
+    --bg-text-color: #ff0070;
+  }
+}
