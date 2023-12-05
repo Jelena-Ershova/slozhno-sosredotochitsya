@@ -203,11 +203,31 @@
         А можно в картинках?
       </h3>
       <div class="gallery">
-        <img class="picture sunset" src="images/sunset.png" alt="Закат солнца" loading="lazy" />
-        <img class="picture ice-cream" src="images/ice-cream.png" alt="Мороженое" loading="lazy" />
-        <img class="picture tape" src="images/tape.png" alt="Кассета для магнитофона" loading="lazy" />
-        <img class="picture books" src="images/books.png" alt="Книги и чай" loading="lazy" />
-        <img class="picture street" src="images/street.png" alt="Улица с небольшими домиками" loading="lazy" />
+        <picture class="sunset">
+          <source srcset="images/sunset.avif" type="image/avif">
+          <source srcset="images/sunset.webp" type="image/webp">
+          <img class="picture" src="images/sunset.png" alt="Закат солнца" loading="lazy" />
+        </picture>
+        <picture class="ice-cream">
+          <source srcset="images/ice-cream.avif" type="image/avif">
+          <source srcset="images/ice-cream.webp" type="image/webp">
+          <img class="picture" src="images/ice-cream.png" alt="Мороженое" loading="lazy" />
+        </picture>
+        <picture class="tape">
+          <source srcset="images/tape.avif" type="image/avif">
+          <source srcset="images/tape.webp" type="image/webp">
+          <img class="picture" src="images/tape.png" alt="Кассета для магнитофона" loading="lazy" />
+        </picture>
+        <picture class="books">
+          <source srcset="images/books.avif" type="image/avif">
+          <source srcset="images/books.webp" type="image/webp">
+          <img class="picture" src="images/books.png" alt="Книги и чай" loading="lazy" />
+        </picture>
+        <picture class="street">
+          <source srcset="images/street.avif" type="image/avif">
+          <source srcset="images/street.webp" type="image/webp">
+          <img class="picture" src="images/street.png" alt="Улица с небольшими домиками" loading="lazy" />
+        </picture>
       </div>
     </section>
   </main>

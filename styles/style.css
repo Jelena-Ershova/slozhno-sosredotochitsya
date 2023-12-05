@@ -14,7 +14,7 @@
 }
 
 .header {
-  height: calc(100vh - 20px);
+  height: 100vh;
 }
 
 .header__sub_element {
@@ -31,8 +31,8 @@
 }
 
 .header__theme-menu {
-  margin-block-start: 3.56em;
-  margin-block-end: 3.75em;
+  padding-block-start: 3.56em;
+  padding-block-end: 3.75em;
 }
 
 .header__theme-menu-list {
@@ -90,7 +90,7 @@
 }
 
 .header__title__description {
-  width: 355px;
+  min-inline-size: 355px;
   margin-block-end: 1.65em;
 }
 
@@ -99,8 +99,7 @@
   font-family: 'IBM Plex Mono', 'Fira Code', sans-serif;
   font-weight: 700;
   font-size: 1em;
-  line-height: 1.32em;
-  /* 130% */
+  line-height: 1.32em; /* 130% */
   background-color: var(--bg-text-color);
 }
 
@@ -112,7 +111,8 @@
 }
 
 .main {
-  margin-block-end: 2.74em;
+ padding-block-start: 1.7em;
+ padding-block-end: 2.2em;
 }
 
 .main__title {
@@ -121,7 +121,7 @@
   font-family: 'IBM Plex Mono', 'Fira Code', sans-serif;
   font-weight: 700;
   font-size: 1em;
-  line-height: 1.3em;
+  line-height: 1.29em;
 }
 
 .main__section {
@@ -173,13 +173,14 @@
 }
 
 .picture {
-  width: 99.9%;
+  width: 99.5%;
   object-fit: cover;
   object-position: center;
 }
 
 .footer {
   display: grid;
+  align-content: space-between;
   height: 100vh;
 }
 
@@ -195,7 +196,6 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  min-height: 598px;
   margin-block-end: 0;
 }
 
