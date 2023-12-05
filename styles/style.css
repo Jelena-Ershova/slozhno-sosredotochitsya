@@ -14,7 +14,7 @@
 }
 
 .header {
-  height: 100vh;
+  height: calc(100vh - 20px);
 }
 
 .header__sub_element {
@@ -111,9 +111,9 @@
   border-left: 1px solid var(--accent-color);
 }
 
-/*.main {
-  margin-block: 2.74em;
-}*/
+.main {
+  margin-block-end: 2.74em;
+}
 
 .main__title {
   margin: 0;
