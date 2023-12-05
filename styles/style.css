@@ -7,6 +7,7 @@
   padding-block: 10px;
   font-size: 18px;
   background-image: var(--bg-page-picture);
+  background-color: #d3d3d350;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -99,7 +100,7 @@
   font-family: 'IBM Plex Mono', 'Fira Code', sans-serif;
   font-weight: 700;
   font-size: 1em;
-  line-height: 1.32em; /* 130% */
+  line-height: 1.3em; /* 130% */
   background-color: var(--bg-text-color);
 }
 
@@ -248,7 +249,7 @@
 
   .main__section {
     grid-template-columns: 1fr 2fr;
-    margin-block-end: 0;
+    margin-block-end: 2px;
   }
 
   .why {
