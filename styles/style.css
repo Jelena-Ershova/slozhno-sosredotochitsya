@@ -82,7 +82,7 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   /* 116px */
   line-height: 82.5%;  /* 95.7px */
-  text-shadow: 4px 4px 0px var(--bg-text-color);
+  text-shadow: 2px 2px 0px var(--bg-text-color);
 }
 
 .header__title {
@@ -173,7 +173,7 @@
 }
 
 .picture {
-  width: 99.5%;
+  width: 99.9%;
   object-fit: cover;
   object-position: center;
 }
@@ -182,6 +182,7 @@
   display: grid;
   align-content: space-between;
   height: 100vh;
+  padding-block: 10px;
 }
 
 .footer__sub_element {
@@ -201,8 +202,8 @@
 
 @media (width >=768px) {
   .page {
-    margin-inline: 20px;
-    margin-block: 20px;
+    padding-inline: 20px;
+    padding-block: 20px;
   }
 
   .header__sub_element {
@@ -211,32 +212,31 @@
   }
 
   .header__theme-menu {
-    margin-inline-end: 0;
-    margin-block-start: 9.6em;
-    margin-block-end: 9.7em;
+    padding-block-start: 9.5em;
+    padding-block-end: 9.7em;
   }
 
   .header__footer__title {
     margin-inline-start: -19px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     /* 120px */
-    word-spacing: -9px;
   }
 
   .header__title {
-    margin-block-end: 8.9rem;
+    padding-block-end: 10.2rem;
   }
 
   .header__title__description {
-    justify-self: end;
-    width: 50%;
+    display: flex;
+    margin-inline-start: 50%;
     margin-block-end: 7.6em;
   }
 
   .main {
     display: grid;
     gap: 4.35em;
-    margin-block: 4.2em;
+    padding-block-start: 2.15em;
+    padding-block-end: 3.4em;
   }
 
   .main__section {
@@ -260,6 +260,7 @@
       ' multitask multitask '
       ' food food '
       ' gadget gadget ';
+      margin-block-end: 0.1em;
   }
 
   .what .main__title {
@@ -283,10 +284,6 @@
     grid-row-end: span 6;
   }
 
-  .pictures {
-    margin-block-start: 3px;
-  }
-
   .gallery {
     grid-template-areas:
       ' sunset sunset ice-cream '
@@ -298,9 +295,8 @@
     margin-block-start: 20px;
   }
 
-  .picture {
-    inline-size: 100%;
-    block-size: 100%;
+  .gallery_picture {
+    display: flex;
   }
 
   .sunset {
@@ -323,25 +319,25 @@
     grid-area: street;
   }
 
+  .footer {
+    padding-block: 20px;
+  }
+
   .footer_title {
-    margin-inline-start: -5px;
-    margin-block-start: 3px;
-    letter-spacing: -2px;
-    min-block-size: 934px;
+    padding-inline-start: 0.15em;
   }
 }
 
 @media (width >=1024px) {
   .header__theme-menu {
-    margin-inline-end: 0;
-    margin-block-start: 0;
-    margin-block-end: 15.3em;
+    padding-block-start: 0;
+    padding-block-end: 15.3em;
   }
 
   .header__theme-menu-list {
     flex-direction: row;
     justify-content: center;
-    gap: 0 13px;
+    gap: 0 10px;
   }
 
   .header__footer__title {
@@ -349,15 +345,15 @@
   }
 
   .header__title {
-    margin-block-end: 0.6em;
+    padding-block-end: 0.72em;
   }
 
   .header__title__description {
-    margin-block-end: 5em;
+    margin-block-end: 4.95em;
   }
 
   .main {
-    margin-block: 4.4em;
+    padding-block-start: 4.4em;
   }
 
   .what {
@@ -370,10 +366,5 @@
 
   .main__description {
     word-spacing: -1px;
-  }
-
-  .footer_title {
-    letter-spacing: normal;
-    min-block-size: 668px;
   }
 }
