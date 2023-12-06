@@ -1,10 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  height: 100vh;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  padding-inline: 10px;
-  padding-block: 10px;
   font-size: 18px;
   background-image: var(--bg-page-picture);
   background-color: #d3d3d350;
@@ -16,6 +13,8 @@
 
 .header {
   height: 100vh;
+  padding-inline: 10px;
+  padding-block: 10px;
 }
 
 .header__sub_element {
@@ -91,7 +90,6 @@
 }
 
 .header__title__description {
-  min-inline-size: 355px;
   margin-block-end: 1.65em;
 }
 
@@ -114,6 +112,7 @@
 .main {
  padding-block-start: 1.7em;
  padding-block-end: 2.2em;
+ padding-inline: 10px;
 }
 
 .main__title {
@@ -145,7 +144,6 @@
   font-family: 'IBM Plex Mono', 'Fira Code', sans-serif;
   font-size: 1em;
   line-height: 1.3em;
-  /* 130% */
 }
 
 .link-accent {
@@ -170,12 +168,7 @@
 
 .gallery {
   display: grid;
-  grid-template-areas:
-      'sunset'
-      'ice-cream'
-      'tape'
-      'books'
-      'street';
+  grid-template-columns: 1fr;
   gap: 0.55em;
 }
 
@@ -190,6 +183,7 @@
   align-content: space-between;
   height: 100vh;
   padding-block: 10px;
+  padding-inline: 10px;
 }
 
 .footer__sub_element {
@@ -209,7 +203,7 @@
 }
 
 @media (width >=768px) {
-  .page {
+  .header {
     padding-inline: 20px;
     padding-block: 20px;
   }
@@ -226,8 +220,7 @@
 
   .header__footer__title {
     margin-inline-start: -19px;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    /* 120px */
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); /* 120px */
   }
 
   .header__title {
@@ -245,6 +238,7 @@
     gap: 4.35em;
     padding-block-start: 2.15em;
     padding-block-end: 3.4em;
+    padding-inline: 20px;
   }
 
   .main__section {
@@ -329,6 +323,7 @@
 
   .footer {
     padding-block: 20px;
+    padding-inline: 20px;
   }
 
   .footer_title {
