@@ -4,7 +4,6 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-size: 18px;
   background-image: var(--bg-page-picture);
-  background-color: #d3d3d350;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -110,7 +109,7 @@
 }
 
 .main {
- padding-block-start: 1.7em;
+ padding-block-start: 2.2em;
  padding-block-end: 2.2em;
  padding-inline: 10px;
 }
@@ -236,7 +235,7 @@
   .main {
     display: grid;
     gap: 4.35em;
-    padding-block-start: 2.15em;
+    padding-block-start: 3.4em;
     padding-block-end: 3.4em;
     padding-inline: 20px;
   }
