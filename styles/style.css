@@ -387,6 +387,14 @@
     word-spacing: 0;
   }
 
+  .main__sub-title {
+    padding-inline-start: 3px;
+  }
+  
+  .main__description {
+    padding-inline-start: 3px;
+  }
+  
   .what {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: min-content;
