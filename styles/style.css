@@ -167,6 +167,7 @@
 
 .main__sub-title {
   margin-block: 0 0.55em;
+  padding-inline-start: 3px;
 }
 
 .main__sub-title-plus {
@@ -179,6 +180,7 @@
   font-family: var(--base-font-family);
   font-size: 1em;
   line-height: 1.3em;
+  padding-inline-start: 3px;
 }
 
 .link-accent {
@@ -369,7 +371,7 @@
 }
 
 @media (width >=1024px) {
-  .header__theme-menu{
+  .header__theme-menu {
     inline-size: 100%;
     justify-content: center;
   }
