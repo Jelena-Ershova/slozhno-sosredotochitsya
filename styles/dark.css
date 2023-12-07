@@ -19,21 +19,3 @@
 
   --bg-page-picture: url(../images/cover-image-dark.png);
 }
-
-.theme_dark .header__sub_element::before {
-  content: "REC";
-  position: absolute;
-  right: 28px;
-  display: inline-block;
-}
-
-.theme_dark .header__sub_element::after {
-  content: "";
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-  margin-inline-start: 8px;
-  border-radius: 5px;
-  box-shadow: -1px -1px 2px 2px var(--accent-color);
-  background-color: var(--accent-color);
-}

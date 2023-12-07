@@ -2,8 +2,9 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
-@media (prefers-color-scheme: dark) {
-  .page {
+  :root {
+    --base-font-family: 'IBM Plex Mono', 'Courier New', monospace;
+
     /* Переменные тёмной темы */
     --accent-color: #ff0070;
     --title-color: #db00ff;
@@ -14,23 +15,3 @@
 
     --bg-page-picture: url(../images/cover-image-dark.png);
   }
-}
-
-@media (prefers-color-scheme: light) {
-  .page {
-    --accent-color: #353430;
-    --title-color: #ffc2e6;
-    --bg-accent-invert-color: #353430;
-    --text-color: #353430;
-    --bg-text-color: #ff8dcb;
-    --border-hover: #32312d40;
-
-    --bg-page-picture: url(../images/cover-image-light.png);
-  }
-}
-
-@media (prefers-color-scheme: light) and (width >=1024px) {
-  .header__footer__title {
-    --bg-text-color: #ff0070;
-  }
-}
