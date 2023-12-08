@@ -11,20 +11,20 @@
 }
 
 .header {
-  height: 100vh;
-  padding-inline: 10px;
-  padding-block: 10px;
+  position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
-  position: relative;
+  height: 100vh;
+  padding-inline: 10px;
+  padding-block: 10px;
 }
 
 .decorated-zone::before,
 .decorated-zone::after {
   content: "";
-  display: block;
   position: absolute;
+  display: block;
 }
 
 .decorated-zone::before {
@@ -46,14 +46,14 @@
 }
 
 .header__sub_element {
-  display: block;
   position: absolute;
   top: 0.5em;
   right: 1em;
+  display: block;
+  padding-block-start: .1em;
   color: var(--accent-color);
   font-family: var(--base-font-family);
   font-size: inherit;
-  padding-block-start: .1em;
 }
 
 .theme_light .header__sub_element {
@@ -73,16 +73,16 @@
 
 .header__theme-menu {
   display: flex;
-  block-size: 100%;
   justify-content: end;
+  block-size: 100%;
 }
 
 .header__theme-menu-list {
-  align-self:center;
-  list-style-type: none;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: 0.588em;
+  align-self:center;
+  list-style-type: none;
 }
 
 .header__theme-menu-button {
@@ -145,9 +145,9 @@
 }
 
 .main {
+ padding-inline: 10px;
  padding-block-start: 2.2em;
  padding-block-end: 2.2em;
- padding-inline: 10px;
 }
 
 .main__title {
@@ -182,10 +182,10 @@
 }
 
 .link-accent {
+  border-bottom: 1px solid transparent;
   color: var(--text-color);
   text-decoration: none;
   text-shadow: 2px 1px var(--bg-text-color);
-  border-bottom: 1px solid transparent;
 }
 
 .link-accent:hover {
@@ -215,12 +215,12 @@
 }
 
 .footer {
+  position: relative;
   display: grid;
   align-content: center;
   height: 100vh;
-  padding-block: 10px;
   padding-inline: 10px;
-  position: relative;
+  padding-block: 10px;
 }
 
 .footer__sub_element {
@@ -272,9 +272,9 @@
   .main {
     display: grid;
     gap: 4.35em;
+    padding-inline: 20px;
     padding-block-start: 3.35em;
     padding-block-end: 3.4em;
-    padding-inline: 20px;
   }
 
   .main__section {
@@ -367,8 +367,8 @@
   }
 
   .footer {
-    padding-block: 20px;
     padding-inline: 20px;
+    padding-block: 20px;
   }
 
   .footer_title {
@@ -378,15 +378,15 @@
 
 @media (width >=1024px) {
   .header__theme-menu {
-    inline-size: 100%;
     justify-content: center;
+    inline-size: 100%;
   }
 
   .header__theme-menu-list {
-    align-self: start;
-    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     gap: 0 10px;
+    align-self: start;
   }
 
   .header__footer__title {

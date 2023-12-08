@@ -19,3 +19,7 @@
 
   --bg-page-picture: url(../images/cover-image-dark.png);
 }
+
+.page.theme_dark .header__sub_element {
+  display: block;
+}
